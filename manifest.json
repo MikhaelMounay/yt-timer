@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "version": "1.0",
+    "name": "YT-Timer",
+    "description": "Limits YouTube watch minutes (based on the last 24 hours not a time-specific reset).",
+    "permissions": ["storage"],
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/watch*"],
+            "js": ["src/constants.js", "src/utils.js", "src/main.js"]
+        }
+    ]
+}
