@@ -6,7 +6,7 @@
     "permissions": ["storage"],
     "content_scripts": [
         {
-            "matches": ["*://*.youtube.com/watch*"],
+            "matches": ["*://*.youtube.com/*"],
             "js": ["src/constants.js", "src/utils.js", "src/main.js"]
         }
     ]
